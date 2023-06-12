@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="info">
+            <img src="./images/logo_s.svg" alt="">
+            <h1><img src="./images/logo_wt.svg" alt="슬로워"></h1>
+            <p>
+                빨리 먹는 식습관을 개선하도록 도와줌으로써 <br>
+                올바른 식습관 형성에 도움을 주는 앱 서비스입니다
+            </p>
+            
+            <dl>
+                Mobile UI/UX Design <br>
+                Date | 2023.03.08 - 2023.06.13 <br>
+                Team | 비상 <br>
+            </dl>
+        </div>
+
+        <figure>
+            <img src="./images/intro_mobile.png" alt="">
+            <figcaption>앱의 스플레쉬 홈 화면입니다.</figcaption>
+        </figure>
+    </header>
+
+    <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QBoSUZmkIng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    <main role="main" class="page-main">
+        <article class="goal">
+            <h2>Project Goal</h2>
+            <p class="summary">
+                비만, 고지혈증 등 여러 질병의 원인이 되는 ‘빨리 먹는 식습관’ 문제를 개선함으로써 <br>
+                천천히 식사 할 수 있게 유도하여 건강하고 올바른 식습관을 형성하도록 도와주고자 합니다.  
+            </p>
+        </article>
+
+        <article class="background wt"> 
+            <div class="inner">
+                <h2>background</h2>
+                <p>
+                    빠르게 먹는 습관은 씹는 시간이 충분히 확보되지 않아 소화 효율을 저하시켜 <br>
+                    소화 장애, 위산 역류, 식도염 등 다양한 소화기 질환의 발생 위험을 증가시킵니다. <br>
+                    또한, 식사 중 식사량을 체감하기 전에 포만감을 느끼게 만들어 과식과 영양 결핍 등의 <br>
+                    문제가 발생하여 우리의 건강에 부정적인 영향을 미치게 되었습니다.
+                </p>
+                <figure>
+                    <img src="./images/background_graph.png" alt="속도그래프 사진">
+                    <figcaption>[ 한국인 평균 식사 속도 ]</figcaption>
+                </figure>
+     
+            </div>
+        </article>
+
+<!-- Persona -->
+        <article class="persona">
+            <div class="inner">
+                <h2>persona</h2>
+                <ul class="user-list">
+                    <li>
+                        <p class="profile">
+                            <span class="thumb">
+                                <img src="./images/persona-man.png" alt="">
+                            </span>
+                            <q>
+                                학교에서도 <b>편하게<br>
+                                식단을 기록</b>하고 싶어요.
+                            </q> 
+                        </p>
+                        <h3>박정우(19세) | 고등학생</h3>
+                        <ul class="info">
+                            <li>
+                                <h4>User Story</h4>
+                                <p> 
+                                    주로 생활하는 학교 내에서는 스마트폰 사용이 제한돼서 급식실이나 일상생활 어디서든 편하게 <br>
+                                    식단을 기록하면서 쉽게 건강 관리를 하고싶어요.
+                                </p>
+                            </li>
+        
+                            <li>
+                                <h4>Needs</h4>
+                                <p>
+                                    주로 생활하는 학교 내에서는 스마트폰 사용이 
+                                    제한돼서 급식실이나 일상생활 어디서든 편하게 
+                                    식단을 기록하면서 쉽게 건강 관리를 하고싶어요.
+                                </p>
+                            </li>
+        
+                            <li>
+                                <h4>Goal</h4>
+                                <p>
+                                    웨어러블 디바이스를 사용해 자유로운 
+                                    식사, 식단 기록으로  효율적인 식사개선을
+                                    하길 원해요.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="profile">
+                            <span class="thumb">
+                                <img src="./images/persona-girl.png" alt="">
+                            </span>
+                            <q>
+                                <b>혼자</b> 식사 속도를<br>
+                                <b>제어</b>하는게 <b>어려워요</b>.
+                            </q> 
+                        </p>
+                        <h3>이가현(22세) | 대학생</h3>
+                        <ul class="info">
+                            <li>
+                                <h4>User Story</h4>
+                                <p> 
+                                    혼 자 자취 생활을 하다보니 주위에서 빠르게 먹는 습관을 제어해줄 수 있는 사람이 없어요. <br>
+                                    혼자서도 습관을 제어할 수 있었으면 좋겠어요.
+                                </p>
+                            </li>
+        
+                            <li>
+                                <h4>Needs</h4>
+                                <p>
+                                    혼자 자취 생활을 하다보니 주위에서 빠르게 
+                                    먹는 습관을 제어해줄 수 있는 사람이 없어요. 
+                                    혼자서도 습관을 제어할 수 있었으면 좋겠어요.
+                                </p>
+                            </li>
+        
+                            <li>
+                                <h4>Goal</h4>
+                                <p>
+                                    워치 없이도 스마트폰을 활용해 편리한 
+                                    식사 속도조절 서비스를 제공받길 원해요. 
+                                    혼자서도 식사속도를 제어하고 올바르게 습관이 개선되길 원해요.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                 
+    
+                <h2 class="blind">핵심기능</h2>
+                
+                <ul class="core-list">
+                    <li>
+                      <strong>어디서든지 간편한 슬로어 연결 서비스</strong> 
+                      <p>디바이스의 편리한 연동으로 
+                         자유로운 식단기록 서비스 제공합니다.
+                      </p>
+                      <img src="./images/persona-watch.png" alt="">
+                    </li>
+    
+                    <li>
+                        <strong>자율 타이머 설정과 알람기능 제공</strong> 
+                        <p>
+                            식사 속도 조절 타이머와 
+                            맞춤 알람 기능을 활용해보세요.
+                        </p>
+                        <img src="./images/persona-clock.png" alt="">
+                      </li>
+    
+                      <li>
+                        <strong>지속적인 참여 유도와 보상 제공</strong> 
+                        <p>
+                            앱 사용 지속성을 높이기 위한
+                            출석체크 보상 서비스를 제공합니다.
+                        </p>
+                        <img src="./images/persona-box.png" alt="">
+                      </li>
+                    
+                </ul>
+            </div>
+
+        </article>
+<!-- Service Value -->
+        <article class="service-value">
+            <div class="inner">
+                <header>
+                    <h2>Service Value</h2>
+                    <p>유저 리서치를 바탕으로 서비스 키워드를 도출했습니다.</p>
+                </header>
+
+                <div class="process">
+                    <img src="./images/value.png" alt="">
+                    <!-- <div>
+                        <p>참여</p>
+                        <ul>
+                            <li>활용</li>
+                            <li>반복</li>
+                            <li>지속</li>
+                        </ul>
+                    </div> -->
+                    <!-- <p>개선</p> -->
+                </div> 
+            </div>
+        </article>
+<!-- Service Direction -->
+        <article class="direction">
+            <div class="inner">
+                <header> 
+                    <h2>Service Direction</h2>
+                    <p>
+                        계속해서 성장하는 사용자를 응원하고 서비스와 사용자의 관계가 편안하면서 긍정적으로 연출될 수 있도록 했으며, <br>
+                        무겁지 않고 에너지 있는 서비스가치의 어울리는 기준을 선정하였습니다.
+                    </p>
+                </header>
+                <ul class="list">
+                    <li>
+                        <h3>에너지 정도</h3>
+                        <div class="range-container">
+                            <span>환한</span>
+                            <div class="range">
+                                <span class="point">
+                                    <span class="blind">30%</span>
+                                </span>
+                            </div>
+                            <span>진지한</span>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <h3>전개 방향</h3>
+                        <div class="range-container">
+                            <span>적극적인</span>
+                            <div class="range">
+                                <span class="point">
+                                    <span class="blind">30%</span>
+                                </span>
+                            </div>
+                            <span>소극적인</span>
+                        </div>
+                    </li>
+                 
+                    <li>
+                        <h3>다양성 증진</h3>
+                        <div class="range-container">
+                            <span>차별화</span>
+                            <div class="range">
+                                <span class="point">
+                                    <span class="blind">30%</span>
+                                </span>
+                            </div>
+                            <span>표준화</span>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <h3>상호작용의 정도</h3>
+                        <div class="range-container">
+                            <span>편리한</span>
+                            <div class="range">
+                                <span class="point">
+                                    <span class="blind">30%</span>
+                                </span>
+                            </div>
+                            <span>번거로운</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </article>
+
+        <article class="concept wt">
+            <div class="inner">
+                <h2>Design Concept</h2>
+                <p>
+                    초록빛은 활력을 불어넣으며 트렌드를 보완하는 깊이있고 이상적인 컬러라고 생각해 슬로어의 서비스배경을 <br>가장 잘 나타 낼 수 있다고 생각했습니다. 식습관 형성에 대해 너무 어렵게 다가가는것보다는 편안한 마음으로 <br> 사용되기를  바라면서 사용자와의 믿음직한 관계형성을 위해 긍정적인 분위기를 강조 했습니다.
+                </p>
+                <div>
+                   <img src="./images/concept.png" alt="">
+
+                    <!-- <div>
+                        <p>
+                            SLOW
+                            <span>슬로우</span>
+                        </p>
+                        <span>+</span>
+                        <p>
+                            ER
+                            <span>관계된 사람</span>
+                        </p>
+                    </div>
+                    <strong>SLOWER</strong> -->
+                
+            </div>
+            
+        </article>
+
+        <article class="logo">
+            <div class="inner">
+                <h2>Logo</h2>
+                <p>
+                    친근하고 부드러운 인상을 남길수 있도록 전체적으로 동그랗고 볼드하게 표현하였으며 잠시 쉬어가는 뜻을 
+                    의미하는 쉼표를 이용해 도형을 결합시켜 로고를 제작했습니다.
+                </p>
+                <img src="./images/logo.png" alt="">
+                <!-- <figure>
+                    <img src="./images/logo_s.svg" alt="">
+                    <img src="./images/logo_gr.svg" alt="">
+                    <figcaption class="blind">logo-img</figcaption>
+                </figure> -->
+            </div>
+            
+        </article>
+
+        <article class="color">
+            <div class="inner">
+                <h2>Colors</h2>
+                <img src="./images/color.png" alt="">
+            </div>
+            
+             
+            <!-- <dl>
+                <dt>Primary</dt>
+                <dd>#0cc790</dd>
+                <dd>#0cc790</dd>
+                <dd>#0cc790</dd>
+            </dl>
+            <dl>
+                <dt>Secondary</dt>
+                <dd>#0cc790</dd>
+                <dd>#0cc790</dd>
+                <dd>#0cc790</dd>
+            </dl>
+            <dl>
+                <dt>Monotone</dt>
+                <dd>#0cc790</dd>
+                <dd>#0cc790</dd>
+                <dd>#0cc790</dd>
+            </dl> -->
+        </article>
+
+        <article class="typorgraphy">
+            <div class="inner">
+                <h2>Typorgraphy</h2>
+                <img src="./images/typorgraphy.png" alt="">
+            </div>
+            
+            <!-- <div>
+                <p>
+                    <span>Type face</span>
+                    <strong>AppleSDNeo</strong>
+                </p>
+                
+                <ul>
+                    <li>
+                        <strong>Medium</strong>
+                        <p>text</p>
+                    </li>
+                    <li>
+                        <strong>Medium</strong>
+                        <p>text</p>
+                    </li>
+                    <li>
+                        <strong>Medium</strong>
+                        <p>text</p>
+                    </li>
+                    <li>
+                        <strong>Medium</strong>
+                        <p>text</p>
+                    </li>
+                </ul>
+            </div> -->
+        </article>
+
+        <article class="logo">
+            <div class="inner">
+                <h2>Logo</h2>
+                <img src="./images/icon.png" alt="">
+            </div>
+            
+                <!-- <ul>
+                    <li>
+                       <img src="./images/logo1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/logo2.png" alt="">
+                     </li>
+                     <li>
+                        <img src="./images/logo3.png" alt="">
+                     </li>
+                     <li>
+                        <img src="./images/logo4.png" alt="">
+                     </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="./images/logo-g-1.png" alt="">
+                     </li> <li>
+                        <img src="./images/logo-g-2.png" alt="">
+                     </li> <li>
+                        <img src="./images/logo-g-3.png" alt="">
+                     </li> <li>
+                        <img src="./images/logo-g-4.png" alt="">
+                     </li>
+                </ul>
+            </div> -->
+        </article>
+
+        <article class="flow">
+            <div class="inner">
+                <h2>Flow chart</h2>
+                <img src="./images/flow.png" alt="">
+            </div>
+        </article>
+
+        <article class="slower">
+            <div class="inner">
+                <h2>SLOWER</h2>
+                <img src="./images/slower.png" alt="">
+            </div>
+            <!-- <div>
+                
+                <img src="./images/logo_gr.svg" alt="">
+                <p>슬로어와 함께 오늘도 천천히!</p>
+            </div>
+
+            <div>
+                <img src="./images/main_1.png" alt="">
+                <img src="./images/main_2.png" alt="">
+            </div> -->
+        </article>
+
+        <article class="home">
+            <div class="inner">
+                <h2>Home</h2>
+                <img src="./images/home.png" alt="">
+            </div>
+            
+            <!-- <p>
+                습관개선을 위해 스스로 과정의 즐거움을 느낄 수 있습니다. 
+                사용자 곁에 머물며 늘 응원하는 슬로어와 함께라면 더 큰 성장은 물론 
+                좋은 변화에 한걸음 더 다가갈 수 있습니다.
+            </p>
+
+            <figure>
+                <img src="./images/home_1.png" alt="">
+                <figcaption>
+                    즉각적인 스마트 워치 연결을 통해 보다 
+                    편리하게 식사 속도를 측정해보세요!
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/home_2.png" alt="">
+                <figcaption>
+                    나의 식사속도 정보를 더 자세히 알아보고
+                    문제점을 파악 할 수 있어요!
+                </figcaption>
+            </figure>
+        </article> -->
+
+        <article class="home2">
+            <div class="inner">
+                <img src="./images/home2.png" alt="">
+            </div>
+
+                <!-- <figcaption>
+                    <img src="./images/home_3.png" alt="">
+                    <img src="./images/home_4.png" alt="">
+                    <figcaption>
+                        꾸준함을 기를 수 있도록 도와드릴게요
+                        매일 출석하며 분명히 즐거움을 찾을 수 있을거에요!
+                    </figcaption>
+                </figcaption> -->
+            
+        </article>
+
+        <article class="calendar">
+            <div class="inner">
+                <h2>Calendar</h2>
+                <img src="./images/Calendar.png" alt="">
+            </div>
+            
+
+            <!-- <figure>
+                <img src="./images/calendar_1.png" alt="">
+                <figcaption>
+                <h3>캘린더 페이지</h3>
+                <p>
+                    그날 그날 먹은 식사를 기록하고
+                    확인 할 수 있도록 준비했어요.
+                </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/calendar_2.png" alt="">
+                <figcaption>
+                <h3>건강상태 및 체중설정 </h3>
+                <p>
+                    목표에 따라 건강하게 변화하는 몸의 정보를
+                    기록하고 건강상태를 확인해보세요!
+                </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/calendar_3.png" alt="">
+            </figure> -->
+        </article>
+
+        <article class="timer">
+            <div class="inner">
+                <h2>Timer</h2>
+                <img src="./images/timer.png" alt="">
+            </div>
+            
+            <!-- <figure>
+                <img src="./images/timer_1.png" alt="">
+                <h3>타이머 페이지</h3>
+                <p>
+                    설정한 시간에 맞추어 점점 사라지는 음식들!
+                    재밌는 방식으로 천천히 식사 할 수 있도록 해드릴게요
+                </p>
+            </figure>
+            <figure>
+                <img src="./images/timer_3.png" alt="">
+            </figure>
+            <figure>
+                <img src="./images/timer_2.png" alt="">
+            </figure> -->
+        </article>
+
+        <article class="wear">
+            <div class="inner">
+                <h2>Wearable option</h2>
+                <img src="./images/wear.png" alt="">
+            </div>
+            
+
+            <!-- <figure>
+                <img src="./images/wearable_1.png" alt="">
+                <img src="./images/wearable_2.png" alt="">
+                <figcaption>
+                    <h3>슬로어 워치 설정</h3>
+                    <p>
+                        시간을 설정하고 연결된 웨어러블 기기와
+                        함께 효과적인 식사를 해보세요!
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/logo_gr.svg" alt="">
+                <img src="./images/wearable_3.png" alt="">
+                <figcaption>
+                    <h3>워치 타이머</h3>
+                    <p>
+                        지정한 속도보다 빨라지면 슬로어가 빨간 경고를 내려요!
+                        계속해서 주의하며 식사해보세요 
+                    </p>
+                </figcaption>
+            </figure> -->
+        </article>
+
+        <article class="slower">
+            
+                <img src="./images/slowe.png" alt="">
+            
+            
+            <!-- <img src="./images/logo_gr.svg" alt="">
+            <p>
+                슬로어 (SLOWER)는 지루할 수 있는 식습관 개선을 습관 형성 뿐만이
+                아닌 지속적인 참여 유도를 통해 서비스 사용 과정에서 사용자 스스로 
+                즐거움을 찾고, 이를 토대로 식습관 문제를 해결할 수 있도록 돕습니다. 
+            </p> -->
+        </article>
+
+        <article class="store">
+            <img src="./images/store.png" alt="">
+        </article>
+
+        <article class="thank">
+            <div class="inner">
+                <img src="./images/thank.png" alt="">
+            </div>
+            <!-- <h2>Thank you!</h2>
+            <div>
+                <img src="./images/thankYou-1.png" alt="">
+                <img src="./images/thankYou-2.png" alt="">
+                <img src="./images/thankYou-3.png" alt="">
+            </div>
+
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div> -->
+        </article>
+
+    
+        
+    </main>
+</body>
+</html>
